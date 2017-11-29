@@ -14,6 +14,12 @@ audioToSvgWaveform('./infile.mp3', './output.svg.gz')
   .catch(console.error)
 ```
 
+### Output
+
+![screenshot of the waveform output](/screenshot.png)
+
+Currently, the stroke color is set to `#000`. But that can be changed with CSS when the file is included inline.
+
 ### Babel.js
 
 The current, stable version of [node.js](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md#6.3.1) supports [95%](http://node.green/) ES6 [features](https://github.com/lukehoban/es6features). 
