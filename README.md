@@ -1,6 +1,8 @@
 # Audio To SVG Waveform
 
-Takes in an audio file and outputs a compressed SVG waveform. This module uses a converted version of [antonKalinin/audio-waveform-svg-path](https://github.com/antonKalinin/audio-waveform-svg-path) that runs in Node instead of in the browser.
+> Convert an audio file to a compressed (gzip) SVG waveform
+
+This module uses a converted version of [antonKalinin/audio-waveform-svg-path](https://github.com/antonKalinin/audio-waveform-svg-path) that runs in Node instead of in the browser.
 
 ### Usage
 
