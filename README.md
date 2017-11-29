@@ -34,17 +34,17 @@ We will use ESLint with Airbnb style and pre-parse our code to detect violations
 ## Quick Start
 1. Make sure you have recent, stable version of node (>= 6.1.0).
 
-	```
-	nave use stable
-	node -v
-	```
+```
+nave use stable
+node -v
+```
 2. Clone or download this repo.
 
 3. Get latest releases of the tools
 
-	```
-	npm update --save
-	```
+```
+npm update --save
+```
 
 ## Commands
 ### Test
