@@ -18,7 +18,7 @@ audioToSvgWaveform('./infile.mp3', './output.svg.gz')
 
 ![screenshot of the waveform output](/screenshot.png)
 
-Currently, the stroke color is set to `#000`. But that can be changed with CSS when the file is included inline.
+The default stroke color is set to `#000` but you can override with `SVG_STROKE` environment variable. But that can be changed with CSS when the file is included inline.
 
 ### Babel.js
 
