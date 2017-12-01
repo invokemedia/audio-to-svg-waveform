@@ -4,13 +4,14 @@ const SVGO = require('svgo');
 const zlib = require('zlib');
 const fs = require('fs');
 const Readable = require('stream').Readable;
+const color = process.env.SVG_STROKE || '#000';
 
 const svgo = new SVGO(/*{ custom config object }*/);
 
 // put the path into a fake svg
 function buildSVG(path) {
   return new Promise((resolve) => {
-    const tempsvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg viewBox="0 0 200 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;"><g transform="matrix(0.0334504,0,0,81,0,40.5)"><path d="${path}" fill="none" stroke="#000" height="100%" width="100%" x="0" y="0" /></g></svg>`;
+    const tempsvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg viewBox="0 0 200 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;"><g transform="matrix(0.0334504,0,0,81,0,40.5)"><path d="${path}" fill="none" stroke="${color}" height="100%" width="100%" x="0" y="0" /></g></svg>`;
     resolve(tempsvg);
   });
 }
